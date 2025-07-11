@@ -48,6 +48,38 @@
   text-stroke: 2px rgb(255, 255, 255);
 }
 
+.texto_proceso {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.8;
+  animation: fadeInOut 3s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .texto_proceso {
+    font-size: 3vh;
+    top: 65%;
+  }
+}
+
 .video_intro {
   border-radius: 20px;
   position: fixed;
