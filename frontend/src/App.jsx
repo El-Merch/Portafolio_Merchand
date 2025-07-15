@@ -1,26 +1,68 @@
-import { Routes, Route, Link } from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Contact from './pages/Contact'
+import { useState } from 'react'
+
+
+const menuItems = [
+  { id: 'home', label: 'Inicio'},
+  { id: 'about', label: 'Sobre mí'},
+  { id: 'abilities', label: 'Proyectos'},
+  { id: 'contact', label: 'Contacto'},
+]
 
 function App() {
-  return (
-    <div className="p-6">
-      <nav className="flex gap-4 mb-6 text-blue-600 font-semibold">
-        <Link to="/">Home</Link>
-        <Link to="/about">Sobre mí</Link>
-        <Link to="/projects">Proyectos</Link>
-        <Link to="/contact">Contacto</Link>
-      </nav>
+  const [open, setOpen] = useState(false)
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+  const handleSelect = (id) => {
+    setOpen(false)
+    
+    // Scroll suave hacia la sección seleccionada
+    const element = document.getElementById(id)
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      })
+    }
+  }
+
+
+  return (
+    <div id='contenedor_main'>
+      {/* Botón de menú en la parte superior izquierda */}
+      <div id='boton_hamburguesa' onClick={() => setOpen(!open)} className={open ? 'active' : ''}>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Menú desplegable */}
+      {open && (
+        <div id='contenedor_navbar'>
+          {menuItems.map(item => (
+            <div id='texto_navbar' key={item.id} onClick={() => handleSelect(item.id)}>
+              {item.label}
+            </div>
+          ))}
+        </div>
+      )}
+
+      <section id='home' className='titulos_secciones'>
+        Seccion Inicio
+      </section>
+
+      <section id='about' className='titulos_secciones'>
+        Seccion Sobre mi
+      </section>
+      
+      <section id='abilities' className='titulos_secciones'>
+        Seccion Habilidades
+      </section>
+
+      <section id='contact' className='titulos_secciones'>
+        Seccion Contacto
+      </section>
     </div>
+
+
   )
 }
 
