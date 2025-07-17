@@ -2,9 +2,9 @@
   position: fixed;
   top: 20px;
   left: 0;
-  width: 100%;
+  width: calc(100% - 60px); /* Reduce el ancho para dejar espacio en ambos lados */
   height: 75px;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
@@ -12,6 +12,7 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   z-index: 1000;
   margin: 0px 30px;
+  border-radius: 10px;
 }
 
 #header .nav-links {
@@ -19,7 +20,6 @@
   flex-grow: 1; /* Los enlaces ocupan todo el espacio disponible */
   height: 100%; /* Los enlaces abarcan toda la altura del header */
 }
-
 
 #header .nav-links a {
   display: flex;
