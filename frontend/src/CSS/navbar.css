@@ -1,64 +1,39 @@
-#boton_hamburguesa {
+#header {
   position: fixed;
   top: 20px;
-  left: 20px;
-  z-index: 1000;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 8px;
-}
-
-#boton_hamburguesa span {
+  left: 0;
   width: 100%;
-  height: 3px;
-  background: rgba(0, 0, 0, 0.8);
-  transition: all 0.5s ease;
-  transform-origin: center;
-}
-
-#boton_hamburguesa.active span:nth-child(1) {
-  transform: rotate(45deg) translate(7px, 7px);
-}
-
-#boton_hamburguesa.active span:nth-child(2) {
-  opacity: 0;
-  transition: opacity 0.2s;
-}
-
-#boton_hamburguesa.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -7px);
-}
-
-#contenedor_navbar {
-  position: fixed;
-  border-radius: 16px;
-  top: 80px;
-  left: 20px;
-  z-index: 999;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  padding: 20px;
+  height: 75px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  margin: 0px 30px;
 }
 
-#texto_navbar {
-  color: rgb(0, 0, 0);
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-weight: 500;
+#header .nav-links {
+  display: flex;
+  flex-grow: 1; /* Los enlaces ocupan todo el espacio disponible */
+  height: 100%; /* Los enlaces abarcan toda la altura del header */
 }
 
-#texto_navbar:hover {
-  background: rgba(0, 0, 0, 0.05);
-  color: #39ce34;
-  transform: translateX(5px);
+
+#header .nav-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1; /* Cada enlace ocupa el mismo espacio dentro del header */
+  height: 100%; /* Cada enlace abarca toda la altura del header */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#header .nav-links a:hover {
+  background-color: rgba(57, 206, 52, 0.1); /* Fondo al pasar el mouse */
+  color: #cad363; /* Cambia el color del texto */
 }

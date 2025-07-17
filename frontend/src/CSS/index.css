@@ -1,5 +1,17 @@
+html, body {
+  scroll-behavior: smooth;
+  overflow: auto;
+  scrollbar-width: none; /* Firefox */
+  background-color: black;
+} 
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Edge */
+}
+
 #contenedor_main {
   font-family: Arial, sans-serif;
+  color: white;
 }
 
 .titulos_secciones {
