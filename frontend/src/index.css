@@ -26,6 +26,7 @@
 
 #boton_hamburguesa.active span:nth-child(2) {
   opacity: 0;
+  transition: opacity 0.2s;
 }
 
 #boton_hamburguesa.active span:nth-child(3) {
