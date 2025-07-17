@@ -62,16 +62,3 @@
   color: #39ce34;
   transform: translateX(5px);
 }
-
-.titulos_secciones {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-#contenedor_main {
-  font-family: Arial, sans-serif;
-}

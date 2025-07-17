@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+import './CSS/navbar.css'
 
 const menuItems = [
   { id: 'home', label: 'Inicio'},
