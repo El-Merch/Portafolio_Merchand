@@ -1,4 +1,4 @@
-import './CSS/navbar.css'
+import './CSS/top_navbar.css'
 
 
 function App() {
@@ -6,15 +6,15 @@ function App() {
 
     <div id="contenedor_main">
       
-      {/* Header */}
-      <header id="header">
+      {/* top_navbar */}
+      <top_navbar id="top_navbar">
         <nav className="nav-links">
           <a href="#home">Inicio</a>
           <a href="#about">Sobre mí</a>
           <a href="#abilities">Proyectos</a>
           <a href="#contact">Contacto</a>
         </nav>
-      </header>
+      </top_navbar>
 
 
       <section id='home' className='titulos_secciones'>

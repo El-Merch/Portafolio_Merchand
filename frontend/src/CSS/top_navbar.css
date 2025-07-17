@@ -1,4 +1,4 @@
-#header {
+#top_navbar {
   position: fixed;
   top: 20px;
   left: 0;
@@ -15,25 +15,25 @@
   border-radius: 10px;
 }
 
-#header .nav-links {
+#top_navbar .nav-links {
   display: flex;
   flex-grow: 1; /* Los enlaces ocupan todo el espacio disponible */
-  height: 100%; /* Los enlaces abarcan toda la altura del header */
+  height: 100%; /* Los enlaces abarcan toda la altura del top_navbar */
 }
 
-#header .nav-links a {
+#top_navbar .nav-links a {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-grow: 1; /* Cada enlace ocupa el mismo espacio dentro del header */
-  height: 100%; /* Cada enlace abarca toda la altura del header */
+  flex-grow: 1; /* Cada enlace ocupa el mismo espacio dentro del top_navbar */
+  height: 100%; /* Cada enlace abarca toda la altura del top_navbar */
   color: #000;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#header .nav-links a:hover {
+#top_navbar .nav-links a:hover {
   background-color: rgba(57, 206, 52, 0.1); /* Fondo al pasar el mouse */
   color: #cad363; /* Cambia el color del texto */
 }
