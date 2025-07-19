@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#Nombre {
+    display: flex;
+}
+
+
+#Nombre h1{
+  font-family: 'Agdasima', sans-serif;
+  font-weight: 100;
+}
