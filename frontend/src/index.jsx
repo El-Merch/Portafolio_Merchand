@@ -3,6 +3,11 @@ import './CSS/background.css'
 
 import './utils/background.js'
 
+import Home from './components/Home.jsx';
+import About from './components/About.jsx';
+import Abilities from './components/Abilities.jsx';
+import Contact from './components/Contact.jsx';
+
 function App() {
   return (
 
@@ -94,22 +99,11 @@ function App() {
         </filter>
       </svg>
 
-      <section id='home' className='titulos_secciones'>
-        Seccion Inicio
-      </section>
-
-      <section id='about' className='titulos_secciones'>
-        Seccion Sobre mi
-      </section>
-      
-      <section id='abilities' className='titulos_secciones'>
-        Seccion Habilidades
-      </section>
-
-      <section id='contact' className='titulos_secciones'>
-        Seccion Contacto
-      </section>
-
+      {/* Secciones */}
+      <Home />
+      <About />
+      <Abilities />
+      <Contact />
 
     </div>
 
