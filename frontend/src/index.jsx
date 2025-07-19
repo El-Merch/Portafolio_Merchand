@@ -7,6 +7,7 @@ import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Abilities from './components/Abilities.jsx';
 import Contact from './components/Contact.jsx';
+import Proyects from './pages/Proyects.jsx'
 
 function App() {
   return (
@@ -108,6 +109,7 @@ function App() {
       <Home />
       <About />
       <Abilities />
+      <Proyects />
       <Contact />
 
     </div>
