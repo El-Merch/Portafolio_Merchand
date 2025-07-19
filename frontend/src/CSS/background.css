@@ -1,0 +1,30 @@
+body {
+  background-color: #a3a3a3;
+  min-height: 100vh;
+  height: max-content;
+}
+
+.ball {
+  position:fixed;
+  border-radius: 100%;
+  opacity: 0.7;
+  z-index: -1;
+  height: 100%;
+}
+
+/* Personaliza la scrollbar completa (track) */
+::-webkit-scrollbar {
+  width: 5px; /* ancho de la scrollbar */
+  height: 5px; /* altura de la scrollbar para scroll horizontal */
+}
+
+/* Personaliza la parte de la scrollbar por donde se desplaza (thumb) */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(0, 0, 0); /* color del thumb */
+}
+
+/* Personaliza el fondo de la scrollbar (track) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color de fondo del track */
+  border-radius: 10px; /* redondea las esquinas del track */
+}

@@ -1,11 +1,16 @@
 import './CSS/navbar.css'
+import './CSS/background.css'
 
+import './utils/background.js'
 
 function App() {
   return (
 
     <div id="contenedor_main">
       
+      {/* Funcionalidad Cursor*/}
+      
+
       {/* top_navbar */}
       <div class='wrapper'>
         <div class='liquidglass-wrapper dock'>
