@@ -25,6 +25,7 @@ function App() {
           <div class='liquidglass-shine'></div>
           <div class='liquidglass-text'>
             <div class='dock'>
+
               <a href="#home">
                 <img src="./src/assets/icons8-home-50.svg" alt="Inicio" className="nav-icon" />
               </a>
@@ -32,11 +33,15 @@ function App() {
                 <img src="./src/assets/icons8-contacts-50.svg" alt="Sobre mí" className="nav-icon" />
               </a>
               <a href="#abilities">
+                <img src="./src/assets/icons8-puzzle.svg" alt="Habilidades" className="nav-icon" />
+              </a>              
+              <a href="#proyects">
                 <img src="./src/assets/icons8-folder-50.svg" alt="Proyectos" className="nav-icon" />
               </a>
               <a href="#contact">
                 <img src="./src/assets/icons8-info-50.svg" alt="Contacto" className="nav-icon" />
               </a>
+
             </div>
           </div>
         </div>
