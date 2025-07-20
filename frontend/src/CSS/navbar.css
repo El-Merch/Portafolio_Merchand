@@ -65,7 +65,8 @@
 }
 
 .dock:hover {
-  transform: scale(1.015); 
+  transform: scale(1.015);
+  padding: 0.5rem;
   border-radius: 2.5rem;
 }
 
