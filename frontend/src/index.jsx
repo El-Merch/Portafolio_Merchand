@@ -1,7 +1,9 @@
 import './CSS/navbar.css'
 import './CSS/background.css'
+import './CSS/cursor.css'
 
 import './utils/background.js'
+import './utils/cursor.js'
 
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
@@ -15,7 +17,7 @@ function App() {
     <div id="contenedor_main">
       
       {/* Funcionalidad Cursor*/}
-      
+      <div id="cursor"></div>
 
       {/* top_navbar */}
       <div class='wrapper'>

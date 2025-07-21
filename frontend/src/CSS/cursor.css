@@ -1,0 +1,29 @@
+/* CURSOR */
+body {
+    cursor: none;
+}
+
+#cursor {
+  position: absolute;
+  background: transparent;
+  pointer-events: none;  /* Asegúrate de que no interfiera con otros elementos */
+  border: 2px solid rgb(255, 255, 255);
+  width: 11px;
+  height: 11px;
+  border-radius: 100%;
+  transform: scale(0);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  z-index: 10;
+  pointer-events: none;
+
+}
+
+#cursor.visible {
+  transform: scale(1.5);
+}
+
+.cursor-hover-effect {
+  border-radius: 40% !important;
+  transform: scale(0.9) !important;   
+  border: 2px solid rgb(228, 228, 228) !important;
+}

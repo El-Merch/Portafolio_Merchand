@@ -1,23 +1,5 @@
-//FUNCIONAMIENTO CURSOR
+//FUNCIONAMIENTO BACKGROUND
 import $ from 'jquery';
-
-const cursor = $("#cursor");
-
-$(document).mousemove(function(e) {
-  // update cursor position object
-  var cursorPos = {
-    x: e.pageX,
-    y: e.pageY
-  };
-
-  // make cursor follow
-  cursor.css({
-    top: (e.pageY - cursor.height() / 2) + "px",
-    left: (e.pageX - cursor.width() / 2) + "px"
-  });
-});
-
-
 
 $('.responsive-image, .watermark, .contenedor_logo, #nav_futurista, #resalte').hover(
   function() {
