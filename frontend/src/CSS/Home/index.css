@@ -1,11 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-#Nombre {
-    display: flex;
+
+
+
+#contenedor_pantalla_home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 200px;
 }
 
-
-#Nombre h1{
+texto_main{
   font-family: 'Agdasima', sans-serif;
   font-weight: 100;
+  display: flex;
+  font-size: clamp(3rem, 8vw, 6rem);
+}
+
+#contenedor_linea_divisora {
+  margin: 10px 0;
+}
+
+.linea_divisora {
+  width: clamp(100px, 20vw, 300px);
+  height: 2px;
+  background-color: #ffffff;
+}
+
+#texto_subtitulo {
+  text-align: center;
+  max-width: 90vw;
+}
+
+.subtitulo-desktop {
+  font-family: 'Quantico', sans-serif;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 400;
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.subtitulo-mobile {
+  display: none;
+}
+
+.subtitulo-mobile p {
+  font-family: 'Quantico', sans-serif;
+  font-size: clamp(0.9rem, 4vw, 1.2rem);
+  font-weight: 400;
+  margin: 5px 0;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .subtitulo-desktop {
+    display: none;
+  }
+  
+  .subtitulo-mobile {
+    display: block;
+  }
 }
