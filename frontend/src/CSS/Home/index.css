@@ -79,6 +79,136 @@ texto_main:hover {
   letter-spacing: 0.5px;
 }
 
+/* Carrusel vertical para desktop */
+.carrusel-vertical {
+  height: 2em; /* Altura fija para mostrar solo un elemento */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-item {
+  font-family: 'Quantico', sans-serif;
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  animation: carruselVertical 9s infinite;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.carrusel-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carrusel-item:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.carrusel-item:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes carruselVertical {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  11% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  44% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Carrusel vertical para mobile */
+.carrusel-vertical-mobile {
+  height: 1.8em;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-item-mobile {
+  font-family: 'Quantico', sans-serif;
+  font-size: clamp(0.9rem, 4vw, 1.2rem);
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  animation: carruselVerticalMobile 9s infinite;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.carrusel-item-mobile:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.carrusel-item-mobile:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.carrusel-item-mobile:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes carruselVerticalMobile {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  11% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  44% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* Efectos hover para el carrusel */
+.carrusel-vertical:hover .carrusel-item,
+.carrusel-vertical-mobile:hover .carrusel-item-mobile {
+  animation-play-state: paused;
+}
+
+.carrusel-item:hover,
+.carrusel-item-mobile:hover {
+  text-shadow: 0 0 10px #ffffff;
+  transform: scale(1.05) translateY(0) !important;
+}
+
 /* Media queries para responsividad */
 @media (max-width: 768px) {
   .subtitulo-desktop {

@@ -18,12 +18,8 @@ function Home() {
           
           <div id='texto_subtitulo'>
             
-            <p className='subtitulo-desktop'>
-              <span className='animacion-datos'>Ingeniero en Datos</span> | 
-              <span className='animacion-web'>Desarrollador Web</span> | 
-              <span className='animacion-software'>Desarrollador de Software</span>
-            </p>  
-                      
+            <p className='subtitulo-desktop'>Ingeniero en Datos | Desarrollador Web | Desarrollador de Software</p>
+            
             <div className='subtitulo-mobile'>
               <p>Ingeniero en Datos</p>
               <p>Desarrollador Web</p>
