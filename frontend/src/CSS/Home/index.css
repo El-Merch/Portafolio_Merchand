@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Oswald:wght@200..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 
 
@@ -10,18 +10,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 
 texto_main{
-  font-family: 'Agdasima', sans-serif;
-  font-weight: 100;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
   display: flex;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(1.9rem, 8vw, 6rem);
+  transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+texto_main:hover {
+  transform: scale(1.1);
+}
+
+#resalte_titulo {
+  background: linear-gradient(270deg, #0052B0, #960600, #0052B0);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: GradientShift 20s ease infinite;
+  cursor: none;
+  transition: transform 0.5s ease; /* Transición suave de la transformación */
+}
+
+@keyframes GradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 #contenedor_linea_divisora {
-  margin: 10px 0;
+  margin-bottom: 5px;
 }
 
 .linea_divisora {
