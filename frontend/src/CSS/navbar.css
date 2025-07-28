@@ -55,29 +55,29 @@
   align-items: center;
   justify-content: center;
   gap: 30px;
-  border-radius: 2rem;
+  border-radius: 0.25rem;
   padding: 0.4rem;
 }
 
 .dock,
 .dock > div {
-  border-radius: 2rem;
+  border-radius: 0.25rem;
 }
 
 .dock:hover {
   transform: scale(1.015);
   padding: 0.5rem;
-  border-radius: 2.5rem;
+  border-radius: 0.75rem;
 }
 
 .dock:hover > div {
-  border-radius: 2.5rem;
+  border-radius: 0.75rem;
 }
 
 .dock a {
   padding: 0px 10px;
   padding-top: 10px;
-  border-radius: 30px;
+  border-radius: 5px;
   text-decoration: none;
 }
 
