@@ -7,15 +7,16 @@ import '../CSS/cursor.css'
 
 function Home() {
 
-    useEffect(() => {
-    const texto = document.getElementById('texto_subtitulo');
-    const total = texto.children.length;
-    let index = 0;
+  // Funcion para el carrusel de texto de la pagina de inicio
+  useEffect(() => {
+  const texto = document.getElementById('texto_subtitulo');
+  const total = texto.children.length;
+  let index = 0;
 
-    const interval = setInterval(() => {
-      index = (index + 1) % total;
-      texto.style.transform = `translateY(-${index * 2.5}rem)`;
-    }, 5000); // 5 segundos por texto
+  const interval = setInterval(() => {
+    index = (index + 1) % total;
+    texto.style.transform = `translateY(-${index * 2.5}rem)`;
+  }, 3000); // 5 segundos por texto
 
     return () => clearInterval(interval); // Limpia el intervalo al desmontar el componente
   }, []);
