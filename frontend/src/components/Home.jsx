@@ -1,7 +1,26 @@
+import React, { useEffect } from 'react';
+
 import '../CSS/Home/index.css'
 import '../CSS/cursor.css'
 
+
+
 function Home() {
+
+    useEffect(() => {
+    const texto = document.getElementById('texto_subtitulo');
+    const total = texto.children.length;
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % total;
+      texto.style.transform = `translateY(-${index * 2.5}rem)`;
+    }, 5000); // 5 segundos por texto
+
+    return () => clearInterval(interval); // Limpia el intervalo al desmontar el componente
+  }, []);
+
+
   return (
     <section id='home' className='titulos_secciones'>
       <div id='contenedor_pantalla_home'>
@@ -15,18 +34,14 @@ function Home() {
         </div>
 
         <div id='contenedor_texto_subtitulo'>
-          
-          <div id='texto_subtitulo'>
-            
-            <p className='subtitulo-desktop'>Ingeniero en Datos | Desarrollador Web | Desarrollador de Software</p>
-            
-            <div className='subtitulo-mobile'>
-              <p>Ingeniero en Datos</p>
-              <p>Desarrollador Web</p>
-              <p>Desarrollador de Software</p>
+                                  
+            <div class='carrusel_subtitulo'>
+              <div class="texto_subtitulo" id="texto_subtitulo" >
+                <div id='texto_datos'>Ingeniero en Datos</div>
+                <div id='texto_software'>Desarrollador de Software</div>
+                <div id='texto_web'>Desarrollador Web</div>
+              </div>
             </div>
-
-          </div>
 
         </div>
 

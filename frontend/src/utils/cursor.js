@@ -1,4 +1,4 @@
-// FUNCIONAMIENTO CURSOR
+// FUNCIONAMIENTO CURSOR DIRECTO
 
 import $ from 'jquery';
 
@@ -10,10 +10,10 @@ $(document).ready(function() {
     // Agregar clase visible para que aparezca
     cursor.addClass('visible');
     
-    // Actualizar posición del cursor
+    // Actualizar posición del cursor directamente
     cursor.css({
-      top: (e.pageY - cursor.height() / 2) + "px",
-      left: (e.pageX - cursor.width() / 2) + "px"
+      top: e.pageY + "px",
+      left: e.pageX + "px"
     });
   });
 
