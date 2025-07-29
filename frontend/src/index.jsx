@@ -49,6 +49,10 @@ function App() {
             </div>
           </div>
         </div>
+
+        <div class='texto_cambiante'>
+          ola
+        </div>
       </div>
 
       {/* SVG Filter para efectos de vidrio */}
