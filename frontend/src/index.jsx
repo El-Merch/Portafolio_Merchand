@@ -4,6 +4,7 @@ import './CSS/cursor.css'
 
 import './utils/background.js'
 import './utils/cursor.js'
+import './utils/sectionDetector.js'
 
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
@@ -20,14 +21,14 @@ function App() {
       <div id="cursor"></div>
 
       {/* top_navbar */}
-      <div class='wrapper'>
-        <div class='liquidglass-wrapper dock'>
+      <div className='wrapper'>
+        <div className='liquidglass-wrapper dock'>
 
-          <div class='liquidglass-effect'></div>
-          <div class='liquidglass-tint'></div>
-          <div class='liquidglass-shine'></div>
-          <div class='liquidglass-text'>
-            <div class='dock'>
+          <div className='liquidglass-effect'></div>
+          <div className='liquidglass-tint'></div>
+          <div className='liquidglass-shine'></div>
+          <div className='liquidglass-text'>
+            <div className='dock'>
 
               <a href="#home">
                 <img src="./src/assets/icons8-home-50.svg" alt="Inicio" className="nav-icon" />

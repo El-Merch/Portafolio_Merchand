@@ -74,13 +74,6 @@
   border-radius: 0.75rem;
 }
 
-.dock a {
-  padding: 0px 10px;
-  padding-top: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
 
 .dock img {
   filter: brightness(0) invert(1);
@@ -91,6 +84,31 @@
   transform: scale(0.9);
   filter: brightness(0) invert(0);
   transform-origin: center center;
+}
+
+/* Estilos para el estado activo */
+.dock a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15), 
+              0 2px 8px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+}
+
+.dock a.active img {
+  transform: scale(0.9);
+  filter: brightness(0) invert(0);
+  transform-origin: center center;
+}
+
+/* Mejorar la transición para todos los enlaces */
+.dock a {
+  padding: 0px 10px;
+  padding-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 /* Wrapper */
