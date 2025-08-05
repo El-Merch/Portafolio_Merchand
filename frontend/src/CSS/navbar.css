@@ -171,8 +171,13 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
-.texto_cambiante{
+
+.texto_cambiante {
   letter-spacing: 10px;
   font-weight: 100;
   backdrop-filter: none;
+  text-shadow:
+    0 0 4px #939393,      /* brillo blanco suave */
+    0 0 8px #939393,     /* brillo más extendido */
+    0 0 16px #699a9d;  /* toque azul brillante opcional */
 }
