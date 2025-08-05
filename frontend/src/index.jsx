@@ -12,7 +12,47 @@ import Abilities from './components/Abilities.jsx';
 import Contact from './components/Contact.jsx';
 import Proyects from './pages/Proyects.jsx'
 
+import React, { useEffect, useState, UseState } from 'react';
+
 function App() {
+
+  const [activeSection, setActiveSection] = useState('home');
+
+    useEffect(() => {
+    function getCurrentSection() {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollPosition = window.scrollY + window.innerHeight / 3;
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (
+          scrollPosition >= section.offsetTop &&
+          scrollPosition < section.offsetTop + section.offsetHeight
+        ) {
+          return section.id;
+        }
+      }
+      if (window.scrollY < 200) return 'home';
+      return sections[0]?.id || 'home';
+    }
+
+    function onScroll() {
+      setActiveSection(getCurrentSection());
+    }
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  const sectionTexts = {
+    home: 'INICIO',
+    about: 'SOBRE MÍ',
+    abilities: 'HABILIDADES',
+    proyects: 'PROYECTOS',
+    contact: 'CONTACTO',
+  };
+
   return (
 
     <div id="contenedor_main">
@@ -51,7 +91,7 @@ function App() {
         </div>
 
         <div class='texto_cambiante'>
-          ola
+          {sectionTexts[activeSection] || 'Bienvenido'}
         </div>
       </div>
 

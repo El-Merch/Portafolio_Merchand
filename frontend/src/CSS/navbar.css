@@ -171,3 +171,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
+.texto_cambiante{
+  letter-spacing: 10px;
+  font-weight: 100;
+  backdrop-filter: none;
+}
