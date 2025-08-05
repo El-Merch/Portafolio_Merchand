@@ -161,23 +161,9 @@
   }
 }
 
-.texto_cambiante{
-  backdrop-filter: blur(10px);
-  color: #ffffff;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
 .texto_cambiante {
+  font-size: 0.5rem;
   letter-spacing: 10px;
-  font-weight: 100;
+  font-weight: 400;
   backdrop-filter: none;
-  text-shadow:
-    0 0 4px #939393,      /* brillo blanco suave */
-    0 0 8px #939393,     /* brillo más extendido */
-    0 0 16px #699a9d;  /* toque azul brillante opcional */
 }
