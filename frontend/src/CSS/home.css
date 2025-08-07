@@ -78,6 +78,41 @@ texto_main:hover {
   letter-spacing: 1px;
 }
 
-#select_csv{
-  border: 1px #0052B0;  
+#select_csv {
+  font-family: 'Quantico', sans-serif;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background: linear-gradient(135deg, rgba(43, 120, 208, 0.2), rgba(207, 31, 25, 0.2));
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  padding: 12px 20px;
+  outline: none;
+  border-color: rgb(117, 117, 117);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  margin-top: 20px;
+  min-width: 200px;
+}
+
+#select_csv:hover {
+  background: linear-gradient(135deg, rgba(30, 107, 195, 0.3), rgba(150, 6, 0, 0.3));
+  border-color: #1a4f8b;
+  box-shadow: 0 6px 24px rgba(0, 82, 176, 0.25);
+  transform: translateY(-2px);
+}
+
+#select_csv:focus {
+  border-color: #6d1411;
+  box-shadow: 0 0 0 3px rgba(150, 6, 0, 0.2), 0 6px 24px rgba(0, 82, 176, 0.25);
+}
+
+#select_csv option {
+  color: #ffffff;
+  background: #111111;
+  font-family: 'Quantico', sans-serif;
+  padding: 8px;
+  border-radius: 8px;
 }
