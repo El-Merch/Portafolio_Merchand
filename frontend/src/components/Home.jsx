@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import '../CSS/Home/index.css'
+import '../CSS/home.css'
 import '../CSS/cursor.css'
 
 
@@ -44,6 +44,14 @@ function Home() {
               </div>
             </div>
 
+        </div>
+
+        <div id='contenedor_select_csv'>
+          <select id='select_csv'>
+            CSV
+            <option value="">CSV Español</option>
+            <option value="">CSV Ingles</option>
+          </select>
         </div>
 
       </div>
