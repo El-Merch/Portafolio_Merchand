@@ -48,7 +48,7 @@ function Home() {
 
         <div id='contenedor_select_csv'>
           <select id='select_csv'>
-            CSV
+            <option selected disabled>Descargar CSV</option>
             <option value="">CSV Español</option>
             <option value="">CSV Ingles</option>
           </select>
