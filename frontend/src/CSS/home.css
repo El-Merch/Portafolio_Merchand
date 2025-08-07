@@ -109,6 +109,11 @@ texto_main:hover {
   box-shadow: 0 0 0 3px rgba(150, 6, 0, 0.2), 0 6px 24px rgba(0, 82, 176, 0.25);
 }
 
+#contenedor_select_csv {
+  margin-top: 10px; /* Espacio adicional desde el texto de arriba */
+  margin-bottom: -100px; /* Compensa para no afectar el centrado general */
+}
+
 #select_csv option {
   color: #ffffff;
   background: #111111;
