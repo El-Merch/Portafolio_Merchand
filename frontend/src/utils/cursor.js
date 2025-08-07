@@ -23,7 +23,7 @@ $(document).ready(function() {
   });
 
   // Efectos hover para elementos interactivos
-  $('a, button, .nav-icon, texto_main').hover(
+  $('a, button, .nav-icon, texto_main, #select_csv').hover(
     function() {
       cursor.addClass('cursor-hover-effect');
     },
