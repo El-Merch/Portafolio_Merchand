@@ -1,0 +1,59 @@
+#scrolldown_container {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+
+#texto_scrolldown {
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  margin-bottom: 0.3rem;
+  transition: color 0.3s;
+}
+
+.scroll-down-btn:hover #texto_scrolldown {
+  transform: scale(1.2);
+  transition: color 0.3s, transform 0.3s;
+}
+
+
+.scroll-down-btn {
+  background: rgb(0, 0, 0);
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.5rem;
+  padding: 0.9rem 1.8rem;
+  transition: background 0.3s;
+  box-shadow: 0 4px 24px 0 rgba(49, 49, 49, 0.227); /* Sombra difusa azul */
+
+}
+
+.scroll-down-btn:hover {
+  background: none; /* Un poco más visible al hacer hover */
+  box-shadow: none; /* Sombra difusa azul */
+}
+
+.arrow {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-left: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+  transform: rotate(-45deg);
+  margin-bottom: 0.5rem;
+}
+
+.scroll-down-btn:hover .arrow {
+  transform: scale(1.2) rotate(-45deg);
+  transition: border-color 0.3s, transform 0.3s;
+}

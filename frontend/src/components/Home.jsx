@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import '../CSS/home.css'
 import '../CSS/cursor.css'
+import '../CSS/scrolldown.css'
 
 
 
@@ -52,6 +53,24 @@ function Home() {
             <option value="">CV Español</option>
             <option value="">CV English</option>
           </select>
+        </div>
+
+        <div id="scrolldown_container">
+          <button
+            className="scroll-down-btn"
+            onClick={() => {
+              const nextSection = document.getElementById('about');
+              if (nextSection) {
+                nextSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            aria-label="Desplazar hacia abajo"
+          >
+            <div id='texto_scrolldown'>
+              Descubre más
+            </div>
+            <span className="arrow"></span>
+          </button>
         </div>
 
       </div>
