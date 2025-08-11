@@ -15,12 +15,11 @@
   letter-spacing: 1px;
   text-shadow: 0 2px 8px rgba(0,0,0,0.3);
   margin-bottom: 0.3rem;
-  transition: color 0.3s;
+  transition: color 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
 }
 
 .scroll-down-btn:hover #texto_scrolldown {
   transform: scale(1.2);
-  transition: color 0.3s, transform 0.3s;
 }
 
 
@@ -33,14 +32,13 @@
   align-items: center;
   border-radius: 1.5rem;
   padding: 0.9rem 1.8rem;
-  transition: background 0.3s;
-  box-shadow: 0 4px 24px 0 rgba(49, 49, 49, 0.227); /* Sombra difusa azul */
-
+  transition: background 0.4s cubic-bezier(.4,0,.2,1), box-shadow 0.4s cubic-bezier(.4,0,.2,1);
+  box-shadow: 0 4px 24px 0 rgba(49, 49, 49, 0.227);
 }
 
 .scroll-down-btn:hover {
-  background: none; /* Un poco más visible al hacer hover */
-  box-shadow: none; /* Sombra difusa azul */
+  background: none;
+  box-shadow: none;
 }
 
 .arrow {
@@ -51,9 +49,9 @@
   border-bottom: 4px solid #fff;
   transform: rotate(-45deg);
   margin-bottom: 0.5rem;
+  transition: border-color 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
 }
 
 .scroll-down-btn:hover .arrow {
   transform: scale(1.2) rotate(-45deg);
-  transition: border-color 0.3s, transform 0.3s;
 }
