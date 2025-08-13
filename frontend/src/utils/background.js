@@ -63,39 +63,3 @@ balls.forEach((el, i, ra) => {
     }
   );
 });
-
-//FUNCION PARA LA NAV BAR
-
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const currentActive = document.querySelector('.nav-link.active');
-    if (currentActive) {
-      currentActive.classList.remove('active');
-    }
-    this.classList.add('active');
-
-    const targetId = this.getAttribute('href');
-    const targetSection = document.querySelector(targetId);
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop,
-        behavior: 'smooth'
-      });
-    }
-  });
-});
-
-// NAV BAR CON TITULO
-
-$(window).on('scroll', function() {
-  var scrollPosition = $(window).scrollTop();
-  $('.nav-link').each(function() {
-    var refElement = $($(this).attr("href"));
-    if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-      $('.nav-link').removeClass('active');
-      $(this).addClass('active');
-      $('#nav_text').text($(this).attr("id").replace('link_inicio', 'Inicio').replace('link_sobre_mi', 'Sobre Mi').replace('link_aptitudes', 'Aptitudes').replace('link_proyectos', 'Proyectos').replace('link_redes','Redes'));  // Cambia el texto basado en el id del enlace
-    }
-  });
-});
